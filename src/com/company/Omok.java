@@ -106,6 +106,11 @@ public class Omok extends JPanel {
         }
 
         void userInput(int row, int col) {
+            if (!inProgress)
+            {
+                return;
+            }
+            
             if ( board[row][col] != EMPTY ) {
                 if (currentPlayer == player1)
                     message.setText("It's player 1 turn.");
