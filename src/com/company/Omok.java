@@ -84,11 +84,17 @@ public class Omok extends JPanel {
             message.setText("player1:  Make your move.");
             inProgress = true;
             Start.setEnabled(false);
+            Reset.setEnabled(true);
             win_r1 = -1;
             repaint();
         }
 
         void resetGame(){
+            if (!inProgress)
+            {
+                return;
+            }
+            
             for (int row = 0; row < 15; row++)
                 for (int col = 0; col < 15; col++)
                     board[row][col] = EMPTY;
@@ -102,6 +108,7 @@ public class Omok extends JPanel {
         void gameOver(String str) {
             message.setText(str);
             Start.setEnabled(true);
+            Reset.setEnabled(false);
             inProgress = false;
         }
 
