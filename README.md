@@ -1,5 +1,5 @@
 # OMOK
-A game based on Gomoku! Similar to tic-tac-toe and connect four, OMOK is a 2 player is allowed to place their pieces anywhere on the board and the first one to achieve 5 in a row wins! 
+A game based on Gomoku! Similar to tic-tac-toe and connect four, OMOK is a 2 player where the player is allowed to place their pieces anywhere on the board! The first one to reach 5 in a row wins! 
 
 # Application Used
 IntelliJ IDEA CE
